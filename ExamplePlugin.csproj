@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <IsUraPlugin>true</IsUraPlugin>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <!-- URA 插件元数据:由仓库根 build targets 用来生成 manifest.json -->
+    <PluginInternalName>ExamplePlugin</PluginInternalName>
+    <PluginDisplayName>Example Plugin</PluginDisplayName>
+    <PluginAuthor>Umamusume Response Analyzer</PluginAuthor>
+    <PluginDescription>Minimal plugin template for the URA plugin contracts.</PluginDescription>
+  </PropertyGroup>
+
+</Project>
