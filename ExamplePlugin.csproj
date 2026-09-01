@@ -14,4 +14,8 @@
     <PluginDescription>Minimal plugin template for the URA plugin contracts.</PluginDescription>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="UmamusumeResponseAnalyzer" Version="2026.9.1" />
+  </ItemGroup>
+
 </Project>
