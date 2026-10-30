@@ -8,8 +8,6 @@ ExamplePlugin 是用于演示 URA 插件契约的最小插件模板。当前实�
 dotnet build .\ExamplePlugin.csproj -c Release -m:1 -p:RuntimeIdentifier=win-x64 -p:SelfContained=false -p:PlatformTarget=AnyCPU -p:DeployUraPluginToLocalAppDataOnBuild=false
 ```
 
-`tests/ExamplePluginSmoke` 默认检查本仓发布边界，以及真实 Host 中初始化和未使用即释放时保持当前 workspace。测试工具源码由 `tests/Support/` 持有。
-
 ## 验证与发布
 
 在 Windows 仓库根执行 `act workflow_dispatch --artifact-server-path "$env:TEMP/ura-act-artifacts"`。本地与 GitHub 使用同一份 workflow；版本 tag 触发 GitHub Release 发布。环境要求、共用 workflow 本地映射和发布规则见 [URA plugin workflows](https://github.com/URA-Plugins/.github/blob/v1/README.md)。
